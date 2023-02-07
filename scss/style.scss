@@ -10,22 +10,133 @@ $N-color-light-grayish-magenta: hsl(300, 24%, 96%);
 $N-color-white: hsl(0, 0%, 100%);
 
 
+@mixin flexMix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
 *{
     box-sizing: border-box;
 }
 
 body{
-    background-color:$N-color-light-grayish-magenta ;
+    background-color:$N-color-white ;
+    background-image:url('/images/bg-pattern-top-desktop.svg') ;
+    background-repeat: no-repeat;
 }
 
-.main{
-    padding: 100px;
-    margin: 10rem;
+main{
+    max-width: 80%;
+    padding: 1rem;
+    margin: 1rem auto;
 }
 
 .showcase{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flexMix;
     justify-content: space-between;
+    padding: 1.3rem;
 }
+
+.showcase-text{
+    width: 45%;
+
+    h1{
+        font-size: 4rem;
+        margin-bottom: 0px ;
+        font-weight:900;
+    }
+
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+.showcase-rating{
+    @include flexMix;
+    justify-content: space-around;
+    background-color: $N-color-light-grayish-magenta;
+    margin: 20px auto;
+    padding: 0px 3rem 0 0;
+    border-radius: 0.4rem;
+    // opacity: .2;
+
+    p{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    img{
+        width: 1.2rem;
+    }
+
+}
+
+.showcase-rating:nth-child(2){
+    position: relative;
+    left: 2.5rem;
+}
+
+.showcase-rating:nth-child(3){
+    position: relative;
+    left: 5rem;
+}
+
+.customers-rating{
+    @include flexMix;
+    justify-content: center;
+}
+
+.customer-rating{
+    background-color: $M-color-magenta;
+    margin: 10px;
+    // height: 250px;
+    padding: 1.3rem 0;
+    border-radius: 10px;
+    color: $N-color-light-grayish-magenta;
+}
+
+.customer-details{
+    @include flexMix;
+    justify-content: flex-start;
+    padding: 10px 20px ;
+
+    figure{
+        margin: 10px 20px 0px 10px;
+    }
+
+    img{
+        border-radius: 50%;
+        width: 40px;
+    }
+
+    h3{
+        margin: 0 3px ;   
+    }
+    
+    p{
+        margin: 3px 0  0 0 ;
+        font-weight: lighter;
+    }
+}
+
+
+.customer-rating:nth-child(2){
+    position: relative;
+    top: 1rem;
+}
+.customer-rating:nth-child(3){
+    position: relative;
+    top: 2rem;
+}
+
+
+.attribution{
+
+    font-size: 12px;
+      text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }

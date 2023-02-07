@@ -3,12 +3,15 @@
 }
 
 body {
-  background-color: hsl(300deg, 24%, 96%);
+  background-color: hsl(0deg, 0%, 100%);
+  background-image: url("/images/bg-pattern-top-desktop.svg");
+  background-repeat: no-repeat;
 }
 
-.main {
-  padding: 100px;
-  margin: 10rem;
+main {
+  max-width: 80%;
+  padding: 1rem;
+  margin: 1rem auto;
 }
 
 .showcase {
@@ -16,4 +19,101 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 1.3rem;
+}
+
+.showcase-text {
+  width: 45%;
+}
+.showcase-text h1 {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  font-weight: 900;
+}
+.showcase-text p {
+  font-size: 1.3rem;
+}
+
+.showcase-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(300deg, 24%, 96%);
+  margin: 20px auto;
+  padding: 0px 3rem 0 0;
+  border-radius: 0.4rem;
+}
+.showcase-rating p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.showcase-rating img {
+  width: 1.2rem;
+}
+
+.showcase-rating:nth-child(2) {
+  position: relative;
+  left: 2.5rem;
+}
+
+.showcase-rating:nth-child(3) {
+  position: relative;
+  left: 5rem;
+}
+
+.customers-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-rating {
+  background-color: hsl(300deg, 43%, 22%);
+  margin: 10px;
+  padding: 1.3rem 0;
+  border-radius: 10px;
+  color: hsl(300deg, 24%, 96%);
+}
+
+.customer-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+.customer-details figure {
+  margin: 10px 20px 0px 10px;
+}
+.customer-details img {
+  border-radius: 50%;
+  width: 40px;
+}
+.customer-details h3 {
+  margin: 0 3px;
+}
+.customer-details p {
+  margin: 3px 0 0 0;
+  font-weight: lighter;
+}
+
+.customer-rating:nth-child(2) {
+  position: relative;
+  top: 1rem;
+}
+
+.customer-rating:nth-child(3) {
+  position: relative;
+  top: 2rem;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
