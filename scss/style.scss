@@ -1,0 +1,31 @@
+// Color Variables
+
+// Main Color
+$M-color-magenta: hsl(300, 43%, 22%);
+$M-color-soft-pink: hsl(333, 80%, 67%);
+
+// Neutral colors
+$N-color-dark-grayish-magenta:  hsl(303, 10%, 53%);
+$N-color-light-grayish-magenta: hsl(300, 24%, 96%);
+$N-color-white: hsl(0, 0%, 100%);
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:$N-color-light-grayish-magenta ;
+}
+
+.main{
+    padding: 100px;
+    margin: 10rem;
+}
+
+.showcase{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
