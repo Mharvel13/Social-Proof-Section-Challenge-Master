@@ -1,17 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: hsl(0deg, 0%, 100%);
-  background-image: url("/images/bg-pattern-top-desktop.svg");
-  background-repeat: no-repeat;
+  background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  font-family: "League Spartan", sans-serif;
 }
 
 main {
-  max-width: 80%;
-  padding: 1rem;
+  max-width: 85%;
   margin: 1rem auto;
+  padding: 1rem 0;
 }
 
 .showcase {
@@ -20,18 +23,22 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 1.3rem;
+  color: hsl(300deg, 43%, 22%);
 }
 
 .showcase-text {
   width: 45%;
 }
 .showcase-text h1 {
+  width: 500px;
   font-size: 4rem;
   margin-bottom: 0px;
-  font-weight: 900;
+  font-weight: 700;
 }
 .showcase-text p {
+  color: hsl(303deg, 10%, 53%);
   font-size: 1.3rem;
+  line-height: 27px;
 }
 
 .showcase-rating {
@@ -71,7 +78,7 @@ main {
 
 .customer-rating {
   background-color: hsl(300deg, 43%, 22%);
-  margin: 10px;
+  margin: 10px 20px;
   padding: 1.3rem 0;
   border-radius: 10px;
   color: hsl(300deg, 24%, 96%);
@@ -96,7 +103,7 @@ main {
 }
 .customer-details p {
   margin: 3px 0 0 0;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .customer-rating:nth-child(2) {
@@ -107,6 +114,11 @@ main {
 .customer-rating:nth-child(3) {
   position: relative;
   top: 2rem;
+}
+
+.customer-rating-text {
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 .attribution {
