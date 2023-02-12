@@ -31,8 +31,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Frontend Mentor Solution URL: [Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/social-proof-section-challenge-solution-AfvXX4D1nz)
+- GithubL: [Github Hosted Codes](https://github.com/Mharvel13/Social-Proof-Section-Challenge-Master)
+- Live Site URL: [Live site URL](https://mharvel13.github.io/Social-Proof-Section-Challenge-Master/)
 
 ## My process
 
